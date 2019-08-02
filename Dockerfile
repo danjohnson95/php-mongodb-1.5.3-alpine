@@ -1,6 +1,7 @@
 FROM alpine:3.7
 
 RUN apk add --update \
+    php7-pear \
     php7-dev \
     gcc \
     musl-dev \
