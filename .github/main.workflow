@@ -13,7 +13,7 @@ action "master branch only" {
 
 action "Build image" {
   uses = "actions/docker/cli@86ff551d26008267bb89ac11198ba7f1d807b699"
-  args = "build -t danjohnson95/php-mongodb-1.5.3-alpine:latest"
+  args = "build -t danjohnson95/php-mongodb-1.5.3-alpine:latest ."
   needs = ["master branch only"]
 }
 
